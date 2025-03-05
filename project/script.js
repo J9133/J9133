@@ -1,6 +1,6 @@
 async function checkAppStatus() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/J9133/J9133/main/project/config.json?timestamp=' + new Date().getTime());
+                const response = await fetch('https://raw.githubusercontent.com/J9133/J9133/main/project/config.json?timestamp=');
                 if (!response.ok) {
                     throw new Error("HTTP error! status: ${response.status}");
                 }
